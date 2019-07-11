@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "author": "6QD",
   "license": "MIT",
-  "name": "my-app",
   "scripts": {
     "dev": "nuxt"
   },
   "browserslist": [
     "last 2 versions",
     "ie >= 11"
-  ]
+  ],
+  "dependencies": {
+    "nuxt": "^2.8.1"
+  }
 }
