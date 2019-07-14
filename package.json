@@ -1,24 +1,23 @@
 {
-  "name": "6qd-hatenablog-boilerplate",
+  "name": "hatenablog-theme-builder",
   "version": "1.0.0",
+  "description": "はてなブログテーマのカスタマイズをスムーズにするための開発環境です。",
   "author": "6QD",
-  "license": "MIT",
+  "private": true,
   "scripts": {
-    "build": "npm-run-all scss autoprefixer",
-    "scss": "node-sass scss/style.scss build/style.css --output-style compressed",
-    "autoprefixer": "postcss --use autoprefixer -r build/style.css --no-map",
-    "watch": "chokidar \"scss/\" -c \"npm run build\""
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
-    "chokidar-cli": "^1.2.0",
-    "node-sass": "^4.5.3",
-    "normalize.css": "^8.0.1",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^6.1.2"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "ie >= 11"
-  ]
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0"
+  }
 }
