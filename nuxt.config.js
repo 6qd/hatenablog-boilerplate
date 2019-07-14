@@ -43,6 +43,13 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+    },
+    postcss: {
+      preset: {
+        autoprefixer: {
+          grid: true
+        }
+      }
     }
   }
 }
